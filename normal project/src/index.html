@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>  
+        <nav>
+                <div class="container" > 
+                        <div class="row">   
+                        
+                            <div class="col-md-7">
+
+                                <div class="logo">Sable LTD</div>
+
+                            </div>
+                            
+                            <div class="col-md-2">
+                        
+                                <div class="personal"> 
+
+                                    <button class="personal_btn">Личный кабинет</button>
+
+                                </div>
+                        
+                            </div>
+                            
+                            <div class="col-md-3">
+                        
+                                <div class="personal_second"> 
+
+                                    <button class="personal_btn">О нас</button>
+
+                                </div>
+                        
+                            </div>
+                        </div>
+                </div>
+                        
+        </nav>  
+           
+
+               
+    </header>
+
+    <section class="promo" id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <h1 class="promo_header">Sable LTD</h1>
+                    <div class="promo_subheader">
+                        Майнинг еще никогда не был так прост и высоко доходен !</div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="dreams">
+        <div class="container">
+            <h2 class="dreams_subheader">Воплотите ваши мечты в реальность !</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="reasons_block">
+                            <div class="img_round">
+                                <img src="../src/icons/user-cog-solid.svg" alt=""> 
+                            </div>
+                            <div class="img_descr">
+                            <div class="reasons_subtitle">Как это работает ?</div>  
+                                <div class="reasons_text">
+                                    Постоянный рост доходности криптовалют и майнинга позволяет наращивать вычислительные мощности,  
+                                    вкладываясь в нас. Вы арендуете часть наших мощностей, получая процент  прибыли.
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+               
+                    <div class="col-md-4">
+                        <div class="reasons_block">
+                            <div class="img_round">
+                                <img src="../src/icons/chalkboard-teacher-solid.svg" alt="">
+                            </div>
+                            <div class="img_descr">
+                                <div class="reasons_subtitle">Какие риски ?</div>
+                                <div class="reasons_text">
+                                    Наши трейдеры постоянно следяет за 
+                                    рынком и хэджируются по нужным на  ценам, для сохранения прибыли, выход  из шортов во время роста рынка.   <br>
+                                    Это позволяет минимизировать риски и 
+                                    обеспечить надежную сохранность вкладов.
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+               
+               
+                    <div class="col-md-4">
+                        <div class="reasons_block">
+                            <div class="img_round">
+                                <img src="../src/icons/users-solid.svg" alt="">
+                            </div>
+                            <div class="img_descr">
+                                <div class="reasons_subtitle">Как принять участие ?</div>
+                                <div class="reasons_text">
+                                   <li>Пролистать ниже и в калькуляторе доходности подсчитать возможный доход, исходя из ваших средств.</li><br>
+                                   <li>Сделать депозит/арендовать мощности.</li><br>
+                                   <li>Увеличить процент доходности за счет
+                                    реферальной системы и системы лояльности.</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+                </div>
+
+    </section>
+
+
+
+   
+    <section class="calculator">
+        <div class="container">
+            <div class="bcalc">
+                <div class="calculator_descr">Рассчитайте свой вклад</div>
+                <div class="bcalc__header">Расчитайте свой доход</div>
+                <div class="bcalc__main">
+                    <div class="col-md-6">
+                    <div class="bcalc__sliders">
+                        <div class="bcalc__slidersGroug">
+                            <div class="bcalc__slidersGrougHeader">Взнос</div>
+                            <div class="bcalc__slider">
+                                <input class="bcalc__sliderLabel" id="bcalc_inputSummLabel" type="text" value="0">
+                                <div class="bcalc__sliderControl">
+                                    <div id="bcalc_inputSumm" class="bcalc__inputSumm"></div>
+                                </div>
+                            </div>
+                            </div>
+<!--                         <div class="bcalc__slidersGroug">
+                            <div class="bcalc__slidersGrougHeader">Пополнение <br>в месяц</div>
+                            <div class="bcalc__slider">
+                                <input class="bcalc__sliderLabel" id="bcalc_inputRefillLabel" type="text" value="0">
+                                <div class="bcalc__sliderControl">
+                                    <div id="bcalc_inputRefill" class="bcalc__inputRefill"></div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>  
+                    </div>
+           
+                    <div class="bcalc__diagramm">
+                        <canvas width="300" height="300" class="bcalc__diagrammCanvas" id="bcalc__diagrammCanvas0"></canvas>
+                        <span class="bcalc__result">
+                        <span id = "bcalc__resultTerm0" class="bcalc__resultTerm">Через <span class="bcalc__resultTermNum">1 день</span></span>
+                        <span id="bcalc__resultSumm0" class="bcalc__resultSumm">0</span> <span class="bcalc__resultCurrency">рублей</span>
+                        </span>
+                    </div>
+                    <div class="bcalc__diagramm">
+                        <canvas width="300" height="300" class="bcalc__diagrammCanvas" id="bcalc__diagrammCanvas1"></canvas>
+                        <span class="bcalc__result">
+                        <span id = "bcalc__resultTerm1" class="bcalc__resultTerm">Через <span class="bcalc__resultTermNum">1 неделю</span></span>
+                        <span id="bcalc__resultSumm1" class="bcalc__resultSumm">0</span> <span class="bcalc__resultCurrency">рублей</span>
+                        </span>
+                    </div>
+                    <div class="bcalc__diagramm">
+                        <canvas width="300" height="300" class="bcalc__diagrammCanvas" id="bcalc__diagrammCanvas2"></canvas>
+                        <span class="bcalc__result">
+                        <span id="bcalc__resultTerm2" class="bcalc__resultTerm">Через <span class="bcalc__resultTermNum">1 месяц</span></span>
+                        <span id="bcalc__resultSumm2" class="bcalc__resultSumm">0</span> <span class="bcalc__resultCurrency">рублей</span>
+                        </span>
+                    </div>
+
+               
+            </div>
+    
+        </div>
+    </div>
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+                <script src="js/three.min.js"></script>
+                <script src="js/vanta.net.min.js"></script>
+                <script src="js/jquery.min.js"></script>
+                <script src="js/nouislider.min.js"></script>
+                <script src="js/app.js"></script>
+
+</body> 
+</html>
